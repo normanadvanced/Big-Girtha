@@ -1,0 +1,22 @@
+#include <kipr/botball.h>
+#include <GyroLib.h>
+
+int rmotor = 0, lmotor = 1;
+int rservo = 1, lservo = 2, cserco = 3;
+int open = 325, closed = 625;
+int up = 2000, middle = 1000, down = 0;
+int degrees = 578851;
+
+int main()
+{
+    calibrate_gyro(100);
+    declare_motors(1,0);
+    /*dwg(1500, 4000, 0);
+    twg(.01, -1500000, 100);
+    dwg(1500, 1000, 0);
+    */
+    msleep(3000);
+    return 0;
+}
+
+
